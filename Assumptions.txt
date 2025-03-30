@@ -1,0 +1,10 @@
+1. The frontend is built using React (e.g., with Create React App), and it communicates with the backend exclusively, rather than calling external movie provider APIs directly.
+2. The app fetches the unified movie list and, upon user interaction, requests the cheapest price from the backend.
+3. The design is intended to be modern and minimalistic.
+4. The UI will display a list of movies on one side and a separate panel for showing the cheapest price after a user selects a movie.
+5. Minimal error messages and loading states are provided.
+6. It is assumed that the movie data provided by the backend includes both Cinemaworld and Filmworld IDs.
+7. The frontend is designed so that clicking on a movie triggers a request (passing both provider IDs) to fetch the cheapest price.
+8. The application assumes a stable network connection between the frontend (running on, e.g., localhost:3000) and the backend (configured to run on a specified port, e.g., localhost:5194).
+9. The merging and fallback logic is handled by the backend, keeping the frontend simple and focused on display and user interaction.
+10. Styling and layout are managed via CSS (with a minimalistic, production-ready design), ensuring that the UI remains responsive and visually appealing.
