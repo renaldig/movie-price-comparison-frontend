@@ -8,3 +8,5 @@
 8. The application assumes a stable network connection between the frontend (running on, e.g., localhost:3000) and the backend (configured to run on a specified port, e.g., localhost:5194).
 9. The merging and fallback logic is handled by the backend, keeping the frontend simple and focused on display and user interaction.
 10. Styling and layout are managed via CSS (with a minimalistic, production-ready design), ensuring that the UI remains responsive and visually appealing.
+11. The frontend needs to just capture and show the ID of one of the providers which will be used for reference as the number reference used is the same.
+12. For ease of checking the code, a .env approach is assumed for putting in the API Key, though in production, this could be fed in from a CI/CD step through Azure Key Vault. 
